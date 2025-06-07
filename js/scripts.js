@@ -1,6 +1,6 @@
 function handleQuote() {
   alert("Redirecting to quote form...");
-  // In actual site, you'd redirect or show a modal here
+
 }
  
 const observer = new IntersectionObserver((entries) => {
@@ -16,7 +16,7 @@ const observer = new IntersectionObserver((entries) => {
     threshold: 0.1
   });
 
-  // Observe all elements with the animation class
+
   document.querySelectorAll('.animate-on-scroll').forEach(el => {
     observer.observe(el);
   });
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const leftBtn = document.querySelector(".arrow.left");
   const rightBtn = document.querySelector(".arrow.right");
 
-  const scrollAmount = 320; // adjust to fit your card width + gap
+  const scrollAmount = 320; 
 
   leftBtn.addEventListener("click", () => {
     slider.scrollBy({
@@ -66,20 +66,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ✅ Autoplay every 4 seconds
+
   let autoScrollInterval = setInterval(() => {
     slider.scrollBy({
       left: scrollAmount,
       behavior: "smooth",
     });
 
-    // Optional: reset to beginning when scrolled too far
+
     if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
       slider.scrollTo({ left: 0, behavior: "smooth" });
     }
   }, 4000);
 
-  // Pause on hover
+
   slider.addEventListener("mouseenter", () => clearInterval(autoScrollInterval));
   slider.addEventListener("mouseleave", () => {
     autoScrollInterval = setInterval(() => {
@@ -99,13 +99,12 @@ document.querySelectorAll('.faq-question').forEach(button => {
     const item = button.closest('.faq-item');
     const isOpen = item.classList.contains('open');
     
-    // Close all FAQs
     document.querySelectorAll('.faq-item').forEach(i => {
       i.classList.remove('open');
       i.querySelector('.toggle-icon').textContent = '+';
     });
 
-    // Toggle current FAQ
+
     if (!isOpen) {
       item.classList.add('open');
       button.querySelector('.toggle-icon').textContent = '−';
@@ -134,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Show success message
-    messageBox.textContent = "✅ Your message has been sent successfully!";
+    messageBox.textContent = "✅ Your message has been sent successfully!  We will contact you soon";
     messageBox.style.color = "green";
     messageBox.style.display = "block";
 
@@ -150,7 +149,7 @@ hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
-// Auto-close menu on link click
+
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('active');

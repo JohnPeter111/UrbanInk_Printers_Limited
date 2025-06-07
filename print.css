@@ -27,7 +27,7 @@ nav a {
   font-weight: 500;
 }
 
-/* ✅ Responsive Fix for Smaller Screens */
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -60,7 +60,7 @@ nav a {
   color: #0cee2a;
 }
 
-/* Hero section with background */
+
 .hero {
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ nav a {
   text-align: center;
   flex-direction: column;
   height: 600px;
-  background-image: url('images/background\ 1.jpg'); /* Use your image path */
+  background-image: url('images/background\ 1.jpg'); 
   background-size: cover;
   background-position: center;
   padding: 0 20px;
@@ -248,7 +248,7 @@ html {
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
-  flex-wrap: wrap; /* optional: wraps on small screens */
+  flex-wrap: wrap; 
 }
 
 .mini-sample {
@@ -281,7 +281,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* responsive fallback */
+  flex-wrap: wrap; 
 }
 
 .bulk-text {
@@ -375,12 +375,12 @@ html {
   padding: 20px 0;
 }
 .testimonial-slider {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 .testimonial-slider::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none; 
 }
 
 .testimonial-card {
@@ -479,7 +479,7 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(247, 240, 240, 0.4); /* dark overlay for readability */
+  background-color: rgba(247, 240, 240, 0.4); 
   z-index: 0;
 }
 
@@ -554,7 +554,7 @@ html {
 }
 .btn-primary {
   display: inline-block;
-  background-color: var(--primary); /* or use #00796b */
+  background-color: var(--primary); 
   color: rgb(243, 7, 7);
   padding: 12px 20px;
   border-radius: 8px;
@@ -564,7 +564,7 @@ html {
 }
 
 .btn-primary:hover {
-  background-color: var(--hover-dark); /* or use #004d40 */
+  background-color: var(--hover-dark); 
 }
 .faq-section {
   padding: 60px 20px;
@@ -589,7 +589,7 @@ html {
   text-align: left;
 }
 
-/* Swap FAQ and image sides */
+
 .reverse-layout {
   flex-direction: row-reverse;
 }
@@ -710,14 +710,14 @@ html {
   font-weight: 500;
   display: none;
 }
-/* Container layout */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* Contact section layout */
+
 .contact-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -730,7 +730,7 @@ html {
   flex: 1 1 300px;
 }
 
-/* Style tweaks */
+
 .contact-details h3,
 .contact-form h3 {
   font-size: 22px;
@@ -756,7 +756,7 @@ html {
 .social-icons a:hover {
   color: #f97316;
 }
-/* Footer Styling */
+
 .footer {
   background-color: #111827;
   color: #fff;
@@ -812,7 +812,7 @@ html {
   padding-top: 10px;
   color: #9ca3af;
 }
-/* General Header Styles */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -822,7 +822,7 @@ html {
   background: white;
 }
 
-/* Hamburger (only shown on small screens) */
+
 .hamburger {
   display: none;
   font-size: 24px;
@@ -832,7 +832,7 @@ html {
   z-index: 1001;
 }
 
-/* Logo */
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -840,13 +840,13 @@ html {
   flex: 1;
 }
 
-/* Navigation */
+
 .nav-menu {
   display: flex;
   gap: 20px;
 }
 
-/* Responsive: Small screens */
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -878,7 +878,7 @@ html {
   }
 }
 
-/* Large screen: Centered logo with links split */
+
 @media (min-width: 769px) {
   .header {
     display: flex;
@@ -889,7 +889,7 @@ html {
  .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #000; /* Make it visible */
+  color: #000; 
   z-index: 2;
 }
 
